@@ -10,8 +10,6 @@ export default async (name = 'default'): Promise<Connection> => {
         process.env.NODE_ENV === 'test'
           ? 'gostack_desafio06_tests'
           : defaultOptions.database,
-      password:
-        process.env.NODE_ENV === 'test' ? 'gostack' : defaultOptions.database,
     }),
   );
 };
